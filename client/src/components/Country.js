@@ -1,12 +1,28 @@
-import react from "react";
+import react, { useState, useEffect } from "react";
+import axios from "axios";
+import Player from "./Player";
+function Country(props) {
+  const [players, setPlayers] = useState();
 
-function Country(props){
+  useEffect(() => {
+    axios
+      .get(`https://crossover2backend.onrender.com/${props.country}`)
+      .then((response) => {
+        console.log(response.data);
+        setPlayers(response.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
-
-    return(
-        <h1>Test</h1>
-    )
+  return (
+    <>
+      <h1>{props.country}</h1>
+      {players &&
+        players.map((player) => {
+          return <Player player={player} />;
+        })}
+    </>
+  );
 }
-
 
 export default Country;
