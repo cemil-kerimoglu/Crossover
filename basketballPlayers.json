@@ -1,0 +1,32 @@
+[
+    {
+    "country": "Germany",
+    "players": [
+        {
+            "name": "Dennis Schröder",
+            "height": "188 cm",
+            "age": 28,
+            "position": "point guard",
+            "club": "Houston Rockets"
+        },
+        {
+            "name": "Franz Wagner",
+            "height": "208 cm",
+            "age": 21,
+            "position": "guard",
+            "club": "Orlando Magic"
+        },
+        {
+            "name": "Daniel Theis",
+            "height": "204 cm",
+            "age": 30,
+            "position": "power forward",
+            "club": "Indiana Pacers"
+        },
+
+    ]
+
+    
+  },
+
+]
