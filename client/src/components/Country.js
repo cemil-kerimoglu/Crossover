@@ -1,6 +1,8 @@
 import react, { useState, useEffect } from "react";
 import axios from "axios";
 import Player from "./Player";
+import { Link } from "react-router-dom";
+
 function Country(props) {
   const [players, setPlayers] = useState();
 
@@ -19,7 +21,7 @@ function Country(props) {
       <h1>{props.country}</h1>
       {players &&
         players.map((player) => {
-          return <Player player={player} />;
+          return <Link>{/*<Player player={player} />*/}</Link>;
         })}
     </>
   );
