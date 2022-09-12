@@ -1,0 +1,8 @@
+fetch("backend.com/") -- List of all countries
+{["Germany","Bhutan","Nicaragua"]}
+
+fetch("backend.com/:country") -- List of all players (of a single country)
+{["Niklas","Tommy","Jochen",....]}
+
+fetch("backend.com/:country/:player") -- List each players stats
+{"name":"Niklas", dateofbirth:"11.11.2000",height:"190",....}
